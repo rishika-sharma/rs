@@ -1,0 +1,47 @@
+body {
+background: linear-gradient(-90deg,deeppink,hotpink,pink,snow);
+}
+
+img {
+width: 150px;
+height: 150px;
+float: right;
+margin-top: 0px;
+position: relative;
+}
+
+button {
+height: 20px;
+width: 250px;
+background: antiqueWhite;
+border-radius: 15px;
+height: 40px;
+}
+p {
+color: gray;
+font-family: Courier;
+font-size: 15px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+#cookieh {
+font-size: 35px;
+}
+
+.cookiep {
+font-size: 20px;
+}
+
+.p-edit {
+font-weight: bold;
+}
+
+.aligner {
+position: relative;
+margin-top: 30px;
+}
+
+#cookies {
+font-style: italic;
+}

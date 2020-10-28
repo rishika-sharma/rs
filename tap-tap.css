@@ -1,0 +1,36 @@
+*{
+box-sizing: border-box;
+}
+body {
+ background-color: green;
+ color: snow;
+ text-align: center;
+}
+h1 {
+ text-align: center;
+ color: azure;
+ border: 10px solid yellow;
+ border-radius: 25%;
+ margin: 50px 180px 30px 180px;
+}
+div{
+width: 100%;
+}
+
+#tap{
+font-size: 50px;
+background-color: pink;
+color: deeppink;
+position: absolute;
+width: 33.34%;
+height: 20%;
+border: 10px solid hotpink;
+border-radius: 10%;
+left: 33.33%;
+right:33.33%;
+}
+#onWin{
+text-align: center;
+color: white;
+font-size: 30px;
+}

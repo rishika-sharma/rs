@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+ <head>
+  <title></title>
+  <link rel="stylesheet" href="rocket-launch.css">
+ </head>
+ <body>
+   <div id = all>
+​<h1 id = "header">Rocket Launch Game</h1>
+<p id = "instructions">Click work to start generating money. Once you have enough money you can purchase a worker or factory to work for you. When you build up enough MONEY start crafting rocket parts untill you have completed the rocket. Once the rocket is complete launch it to win the game. (This message will disapear after you click work 5 times)</p>
+<!--Work-->
+<label>Your money: ₹</label>
+<var id = userMoney>0</var><br>
+<label>Total Production(₹/s):</label>
+<var id = totalProduction>0</var><br>
+<button id = "work" onclick="work()">Work</button><br>
+<label>Rocket Status:</label>
+<var id = rocketStatus>Not Ready.</var><br>
+<button id = "launchRocket" onclick="launchRocket()">Launch Rocket!</button>
+<label>Price: ₹</label>
+<var id = launchCost>10000000</var><br>
+<!--Worker-->
+<h3>Worker:</h3>
+<label>Number of workers:</label>
+<var id = numWorker>0</var><br>
+<button id = "buyWorker" onclick="buyWorker()">Buy Worker</button>
+<label>Price: ₹</label>
+<var id = workerCost>100</var><br>
+<label>Current Production(₹/s): </label>
+<var id = workerProduction>0</var><br>
+<!--Factory-->
+<h3>Factory:</h3>
+<label>Number of factories:</label>
+<var id = numFactory>0</var><br>
+<button id = "buyFactory" onclick="buyFactory()">Buy Factory</button>
+<label>Price: ₹</label>
+<var id = factoryCost>1000</var><br>
+<label>Current Production(₹/s): </label>
+<var id = factoryProduction>0</var><br>
+<!--Kilofactory-->
+<h3>Kilofactory:</h3>
+<label>Number of kilofactories:</label>
+<var id = numKilofactory>0</var><br>
+<button id = "buyKilofactory" onclick="buyKilofactory()">Buy Kilofactory</button>
+<label>Price: ₹</label>
+<var id = kilofactoryCost>10000</var><br>
+<label>Current Production(₹/s): </label>
+<var id = kilofactoryProduction>0</var><br>
+<!--Megafactory-->
+<h3>Megafactory:</h3>
+<label>Number of megafactories:</label>
+<var id = numMegafactory>0</var><br>
+<button id = "buyMegafactory" onclick="buyMegafactory()">Buy Megafactory</button>
+<label>Price: ₹</label>
+<var id = megafactoryCost>100000</var><br>
+<label>Current Production(₹/s): </label>
+<var id = megafactoryProduction>0</var><br>
+<!--Rocket Construction-->
+<h3>Rocket Construction:</h3>
+<label>Parts Required:</label>
+<var id = nosecone>Nose Cone,</var>
+<var id = cockpit>Cockpit,</var>
+<var id = fuel>Fuel,</var>
+<var id = frame>Frame,</var>
+<var id = oxidizer>Oxidizer,</var>
+<var id = pumps>Pumps,</var>
+<var id = nozzle>Nozzle,</var>
+<var id = fins>Fins</var><br>
+<button id = "buyNosecone" onclick="buyNosecone()">Buy Nose Cone</button>
+<label>Price: ₹</label>
+<var id = noseconePrice>1000000</var><br>
+<button id = "buyCockpit" onclick="buyCockpit()">Buy Cockpit</button>
+<label>Price: ₹</label>
+<var id = cockpitPrice>1500000</var><br>
+<button id = "buyFuel" onclick="buyFuel()">Buy Fuel</button>
+<label>Price: ₹</label>
+<var id = fuelPrice>2000000</var><br>
+<button id = "buyFrame" onclick="buyFrame()">Buy Frame</button>
+<label>Price: ₹</label>
+<var id = framePrice>2500000</var><br>
+<button id = "buyOxidizer" onclick="buyOxidizer()">Buy Oxidizer</button>
+<label>Price: ₹</label>
+<var id = oxidizerPrice>3000000</var><br>
+<button id = "buyPumps" onclick="buyPumps()">Buy Pumps</button>
+<label>Price: ₹</label>
+<var id = pumpsPrice>3500000</var><br>
+<button id = "buyNozzle" onclick="buyNozzle()">Buy Nozzle</button>
+<label>Price: ₹ </label>
+<var id = nozzlePrice>4000000</var><br>
+<button id = "buyFins" onclick="buyFins()">Buy Fins</button>
+<label>Price: ₹</label>
+<var id = finsPrice>4500000</var><br>
+  <script src="rocket-launch.js"></script>
+   </div>
+ </body>
+</html>

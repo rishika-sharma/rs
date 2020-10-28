@@ -1,0 +1,20 @@
+body{
+  background-color: blue;
+  color: snow;
+}
+#all{
+  width: 300px;
+ margin: 0 auto;
+}
+button{
+width: 120px;
+height: 80px;
+background-color: snow;
+border-radius: 25px;
+}
+h1 {
+ color: hotpink;
+}
+#header {
+ color: hotpink;
+}

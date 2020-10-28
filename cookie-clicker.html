@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title> Cookie Game</title>
+<link rel="stylesheet" href="cookie-clicker.css">
+</head>
+<body>
+<div class="container">
+
+<!--Work Button-->
+<img  <button class="clicker" onClick="cookieClick(1)" src="https://i.ibb.co/TtySFtY/unnamed.png"></button>
+
+<p style="font-size: 50px;">🍪<br>
+<span id="cookies">0</span></p>
+
+<div class="aligner">
+<p class="p-edit">Cookies/s: <span id="cookiesper">0</span></p> <br>
+
+<!--Granny Button-->
+<button class="upgrade-btn" onClick="buyGranny()"><strong>Buy Granny 👵🏼</strong></button>
+<br>
+
+<p class="cookiep">👵🏼 <span id="grannies">0</span>           Cost: <span id="grannyCost"><em>10</em></span></p>
+
+<!-- Baker Button -->
+<button class="upgrade-btn" onClick="buyBaker()"><strong>Buy Baker 👨🏻‍🍳</strong></button>
+<br>
+<p class="cookiep">👨🏻‍🍳 <span id="bakers">0</span>             Cost: <span id="bakerCost"><em>100</em></span></p>
+
+<!--Staff Button-->
+<button class="upgrade-btn" onClick="buyStaff()"><strong>Buy Staff 👨🏻‍💼👩🏻‍💼</strong></button>
+<br>
+<p class="cookiep">👨🏻‍💼👩🏻‍💼 <span id="staff">0</span>
+Cost: <span id="staffCost"><em>1000</em></span></p>
+
+<!--Factory Button-->
+<button class="upgrade-btn" onClick="buyFactory()"><strong>Buy Factory 🏭</strong></button>
+<br>
+<p class="cookiep">🏭 <span id="factories">0</span>
+Cost: <span id="factoryCost">25000</span></p>
+
+<button><a href="#" onClick="save()">Save</a></button>
+<button><a href="#" onClick="load()">Load</a></button>
+
+</div>
+</div>
+
+<script src="cookie-clicker.js"></script>
+</body>
+</html>

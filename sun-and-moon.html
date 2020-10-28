@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" href="sun-and-moon.css">
+</head>
+<body id="body">
+<h1 style="border : 7px ridge green">☀️Day and Night🌕</h1>
+<div style="background-color :" >
+<div class="sun" ; id="sun" ;></div> </div>
+<p id="day">Day</p>
+<p id="night">Night</p>
+<p id="fail"></p>
+<h2 style="color:gold">Increase or Decrease <strong>Speed</strong> -</h2>
+<input type="range" value="5" max="10" min="0.5" id="speed" oninput="speed()">
+<h2 style="color : gold">Increase or Decrease <strong> Size</strong> -</h2>
+<input type="range" id="size" max="100" min="25" value="75" oninput= "game()">
+<br><br><br><br><br><br>
+ <script>
+ function speed() {
+document.getElementById("sun").style.animationDuration = document.getElementById("speed").value + "s" ;
+document.getElementById("body").style.animationDuration = document.getElementById("speed").value + "s" ;
+ }
+ function game() {
+document.getElementById("sun").style.height = document.getElementById("size").value + "px" ;
+document.getElementById("sun").style.width = document.getElementById("size").value + "px" ;
+document.getElementById("sun").style.borderRadius =
+document.getElementById("size").value/ 2 + "px" ;
+ }
+ </script>
+</body>
+</html>

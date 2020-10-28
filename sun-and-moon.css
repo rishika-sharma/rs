@@ -1,0 +1,65 @@
+body {
+ text-align : center;
+ background-color: skyBlue;
+ animation : moon 5s linear 1s infinite alternate ;
+ color: red;
+}
+h1 {
+ text-shadow : 2px 2px 0 goldenRod ;
+}
+.sun {
+height: 75px;
+width: 75px;
+background-color: yellow;
+border-radius: 47.5px;
+animation : sun 5s linear 1s infinite alternate ;
+animation-duration : 5s ;
+position: relative;
+}
+#day {
+ font-size: 50px;
+ color : black ;
+}
+#night {
+ font-size: 50px;
+ color: skyBlue;
+}
+#speed,#size {
+  -webkit-appearance: none ;
+  width: 50%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+#speed::-webkit-slider-thumb, #size::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+#speed::-moz-range-thumb, #size::::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+ #speed {
+  direction: rtl;
+ }
+
+@keyframes sun{
+from{background-color: yellow; left: 0px;}
+to{background-color: white; left: 250px;}
+}
+@keyframes moon{
+from{background-color : skyBlue;}
+to{background-color : black;}
+}
